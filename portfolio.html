@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Paulo Fonseca</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 40px;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            position: relative;
+            z-index: 0;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background-image: url("foto6.jpg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.75;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 400%;
+            letter-spacing: -5px;
+        }
+
+        h2 {
+            font-size: 200%;
+            letter-spacing: -2px;
+            font-style: italic;
+        }
+
+        h3 {
+            font-size: 200%;
+            letter-spacing: -2px;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        h4 {
+            font-size: 140%;
+            letter-spacing: -1px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-left: 20px;
+        }
+
+        .introducao {
+            margin-top: 60px;
+            font-size: 120%;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .foto_paulo {
+            width: 20%;
+            max-width: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .container_maior {
+            display: flex;
+            margin-top: 60px;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 100%;
+        }
+
+        .habilidades_maior {
+            flex: 1;
+        }
+
+        .habilidades_maior section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sub_habilidades {
+            display: flex;
+            gap: 50px;
+            margin-top: 15px;
+        }
+
+        .outros_topicos {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        .redes ul, .projetos ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        a {
+            color: blue;
+            margin-left: 20px;
+        }
+
+        .sub_habilidades li {
+            font-size: 90%
+        }
+
+        .outros_topicos li {
+            font-size: 110%;
+        }
+
+        .outros_topicos a {
+            font-size: 105%;
+        }
+
+        .overlay-folhas {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 999;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Portfólio de Paulo Fonseca</h1>
+
+    <div class="introducao">
+        <img class="foto_paulo" src="foto2.jpg" alt="Foto de Paulo Fonseca">
+        <section>
+            <h2>Quem sou eu?</h2>
+            <br>
+            <p>Meu nome é <b>Paulo Fonseca</b>, sou de Recife, Brasil e atualmente estou cursando <b>Ciência da Computação na CESAR School</b>. Tenho forte interesse por programação e design, o que me motiva por aprimorar minhas habilidades tanto na área de Back como na área de Front-End para buscar uma ocupação como <b>Full-Stack</b>.</p>
+        </section>
+    </div>
+
+    <div class="container_maior">
+
+        <div class="habilidades_maior">
+            <section>
+                <h3>Minhas habilidades</h3>
+                <div class="sub_habilidades">
+                    <div>
+                        <h4>Linguagens de programação</h4>
+                        <ul>
+                            <li><b>Python</b> Intermediário</li>
+                            <li>HTML, CSS e <b>JavaScript</b> Iniciante</li>
+                            <li>C++ para Arduino Iniciante</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Idiomas</h4>
+                        <ul>
+                            <li>Inglês Avançado</li>
+                            <li><b>Francês</b> Intermediário (DELF B1)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="outros_topicos">
+            <section>
+                <h3>Meus interesses</h3>
+                <br>
+                <ul class="interesses">
+                    <li><b>Back-End</b></li>
+                    <li>Front-End</li>
+                    <li>Cybersegurança</li>
+                </ul>
+            </section>
+
+            <section class="redes">
+                <h3>Minhas redes</h3>
+                <br>
+                <ul>
+                    <li><a href="https://www.behance.net/pfpxm" target="_blank">Behance</a></li>
+                    <li><a href="https://github.com/paulofonsecacsr" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/pauloffonseca" target="_blank">Linkedin</a></li>
+                </ul>
+            </section>
+
+            <section class="projetos">
+                <h3>Meus projetos</h3>
+                <br>
+                <ul>
+                    <li><a href="https://github.com/paulofonsecacsr/neuron" target="_blank">Neuron</a></li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        const todosOsLinks = document.querySelectorAll('a');
+        todosOsLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                const confirmacao = confirm("Você está prestes a sair do portfólio. Deseja continuar?");
+                if (!confirmacao) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+
+    <img src="folhas4.png" alt="Folhas decorativas de sobreposição" class="overlay-folhas">
+
+</body>
+</html>
